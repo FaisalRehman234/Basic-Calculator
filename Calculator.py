@@ -11,4 +11,4 @@ elif operater == "*":
 elif operater == "/":
     print(float(num1) / float(num2))
 else:
-    print("Invalid")
+    print("Invalid Operation")
