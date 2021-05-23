@@ -1,14 +1,31 @@
-#A Basic Calculator.
-num1 = input("Enter Number: ")
-operater = input("Operator: ")
-num2 = input("Enter 2nd Number: ")
-if operater == "+":
-    print(float(num1) + float(num2))
-elif operater == "-":
-    print(float(num1) - float(num2))
-elif operater == "*":
-    print(float(num1) * float(num2))
-elif operater == "/":
-    print(float(num1) / float(num2))
+def add(x, y):
+    return x + y
+def subtract(x, y):
+    return x - y
+def multiply(x, y):
+    return x * y
+def divide(x, y):
+    return x / y
+
+num1: int = int(input("Enter a Number: "))
+
+print("Select Operator Below.")
+print("1- Addition")
+print("2- Subtraction")
+print("3- Multiplication")
+print("4- Division")
+
+ope = input("Enter Operator Number: ")
+
+num2 = int(input("Enter Another Number: "))
+
+if ope == '1':
+    print("Your Answer Is: ", num1, '+', num2, "=", add(num1, num2))
+elif ope == '2':
+    print("Your Answer Is: ", num1, "-", num2, "=", subtract(num1, num2))
+elif ope == '3':
+    print("Your Answer Is: ", num1, "x", num2, "=", multiply(num1, num2))
+elif ope == '4':
+    print("Your Answer Is: ", num1, "÷", num2, "=", divide(num1, num2))
 else:
-    print("Invalid Operation")
+    print("Wrong input!")
