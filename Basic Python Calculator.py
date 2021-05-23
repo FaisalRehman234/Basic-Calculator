@@ -1,3 +1,12 @@
+import argparse
+
+parser=argparse.ArgumentParser(
+    description='''Select Operators by choosing options '1, 2, 3 & 4'. ''',
+    epilog="""Author: Faisal Rehman.""")
+args=parser.parse_args()
+
+print("Type '-h' or '--help' to show help")
+
 def add(x, y):
     return x + y
 def subtract(x, y):
